@@ -1,0 +1,19 @@
+hello！
+
+这里的SQL的BUG集合及解决方案
+
+1、安装:mysqld install
+	mysqld --initialize --user=root --console
+		#这里会出现很多字符
+	net start mysql
+		#启动MySql服务
+	//这里输入mysql进行启动会报错：'mysql' 不是内部或外部命令，也不是可运行的程序或批处理文件。
+	解决：重新配置环境变量后解决
+	mysql -u root -p #登陆 之后显示输入密码为：hi58lo32
+
+2、卸载://此处选择删除了注册表
+	sc delete MySql		//停止MySql服务 反馈：[SC] DeleteService 成功
+	手动删除注册表
+	手动删除文件夹
+
+				[2021/11/21]
