@@ -1,0 +1,7 @@
+在PowerShell中输入code $profile ，然后输入以下内容，保存。如果你没有安装VS Code，则使用notepad $profile。
+美化的应用
+Import-Module posh-git
+Import-Module oh-my-posh
+之后
+Set-PoshPrompt paradox
+设置
